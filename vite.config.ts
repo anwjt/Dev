@@ -118,6 +118,13 @@ export default defineConfig((config) => {
       'LMSTUDIO_API_BASE_URL',
       'TOGETHER_API_BASE_URL',
     ],
+
+server: {
+      allowedHosts: ["dev-skkf.onrender.com"], // ✅ เพิ่มโดเมนที่ต้องการอนุญาต
+      host: true,  // ✅ อนุญาตให้เข้าถึงจากภายนอก
+      port: 3000,  // ✅ กำหนดพอร์ตให้ตรงกับที่ใช้งาน
+    },
+    
     css: {
       preprocessorOptions: {
         scss: {
